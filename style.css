@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1 {
+    color: #667eea;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.video-container {
+    position: relative;
+    margin: 2rem 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#video, #canvas {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #5a67d8;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.output {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    border-left: 4px solid #667eea;
+}
+
+#translation {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2d3748;
+    margin: 0.5rem 0;
+}
+
+.sign-list {
+    background: #e6fffa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #38b2ac;
+}
+
+.sign-list h3 {
+    color: #2d3748;
+    margin-top: 0;
+}
+
+.sign-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sign-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #c6f6d5;
+}
