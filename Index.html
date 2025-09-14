@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaLink Prototype - Sign Language Recognition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🤟 LinguaLink Prototype</h1>
+        <p>A proof-of-concept for AI-powered sign language translation.</p>
+        
+        <div class="video-container">
+            <video id="video" width="640" height="480" autoplay></video>
+            <canvas id="canvas" width="640" height="480"></canvas>
+        </div>
+
+        <div class="controls">
+            <button id="startBtn">Start Camera</button>
+            <button id="predictBtn" disabled>Recognize Sign</button>
+        </div>
+
+        <div class="output">
+            <h2>Translation:</h2>
+            <p id="translation">Press 'Recognize Sign' to begin.</p>
+        </div>
+
+        <div class="sign-list">
+            <h3>Supported Signs (Prototype):</h3>
+            <ul>
+                <li>👍 - Hello / Good</li>
+                <li>👎 - No / Bad</li>
+                <li>✌️ - Peace / Victory</li>
+                <li>🤟 - I Love You</li>
+                <li>👋 - Wave / Hello</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Load TensorFlow.js and Handpose model -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+    <script src="script.js"></script>
+</body>
+  </html>
